@@ -49,7 +49,6 @@ Once you have Python installed, go ahead and clone this repository.
 Then from the project directory you just cloned the project into, run: 
 
 `docker build -t piglatin .`
-
 You should see something like : 
 
 ````[+] Building 0.9s (10/10) FINISHED
@@ -80,3 +79,12 @@ Then, if you hit `http://localhost:80/piglatin-converter` with a string as a jso
 
 Here's an example in Postman : https://www.postman.com/downloads/
 ![](images/examplePost.png)
+
+#Example Script
+ 
+It's not the most impressive script, but there's a quick `curl` example in `demo_script.sh`. Give that a run and 
+you'll see an example run of the following string  `Hello, my name is Alice`.
+
+Run with :  
+
+``sh demo_script.sh``
