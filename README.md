@@ -8,7 +8,7 @@ A tool that takes in a word (or a sentence) and converts it to pig latin.
 - Iterm2 (Bash Terminal UI)
 - FastAPI (Includes Uvicorn and Pydantic for Request Body)
 
-**NOTE** : It was assumed that consonant clusters could not exceed lengths of 3. If wikipedia says so, it must be true. https://en.wikipedia.org/wiki/Consonant_cluster
+**NOTE : It was assumed that consonant clusters could not exceed lengths of 3. If wikipedia says so, it must be true.** https://en.wikipedia.org/wiki/Consonant_cluster
 
 
 ### The rules for pig latin are as follows:
@@ -34,7 +34,7 @@ A tool that takes in a word (or a sentence) and converts it to pig latin.
 These rules are a simplified version of the ones from Wikipedia. https://en.wikipedia.org/wiki/Pig_Latin
 
 
-# Running The App
+# Setup Brew/Python (For MacOS)
 I setup a fresh install of python3 using Homebrew. For more information on Homebrew: https://brew.sh
 
 Assuming you have a installation of python locally, which can be verified with: 
@@ -43,8 +43,13 @@ Assuming you have a installation of python locally, which can be verified with:
 
 Once you have Python installed, go ahead and clone this repository.
 
+**NOTE: If you don't have python installed, you can `brew install python3`**
 
 # Running through Docker
+
+Although it's awesome to understand CLI tools for docker, the GUI is super convienent. You can download docker desktop here : https://github.com/JacksonKolb/pigLatin
+
+For the sake of simplicity, let's use the CLI.
 
 Then from the project directory you just cloned the project into, run: 
 
@@ -74,13 +79,14 @@ To run the image you just composed and create the container, run:
 
 `docker run -d --name piglatin -p 80:80 piglatin`
 
+**NOTE: This -p flag will bind the container port to the localhost port of 80.**
 
 Then, if you hit `http://localhost:80/piglatin-converter` with a string as a json request body, you'll get your responses.
 
 Here's an example in Postman : https://www.postman.com/downloads/
 ![](images/examplePost.png)
 
-#Example Script
+# Example Script
  
 It's not the most impressive script, but there's a quick `curl` example in `demo_script.sh`. Give that a run and 
 you'll see an example run of the following string  `Hello, my name is Alice`.
