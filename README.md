@@ -47,7 +47,7 @@ Once you have Python installed, go ahead and clone this repository.
 
 # Running through Docker
 
-Although it's awesome to understand CLI tools for docker, the GUI is super convienent. You can download docker desktop here : https://github.com/JacksonKolb/pigLatin
+Although it's awesome to understand CLI tools for docker, the GUI is super convienent. You can download docker desktop here : https://www.docker.com/products/docker-desktop/
 
 For the sake of simplicity, let's use the CLI.
 
